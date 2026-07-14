@@ -34,27 +34,92 @@
 
   /* ── Tab-Bar (Menü) ─────────────────────────────────────── */
 
-  .tabbar {
+  .site-logo {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 24px;
+  }
+
+  .site-logo img {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    display: block;
+    animation: manta-glow 9.7s infinite;
+  }
+
+  @keyframes manta-glow {
+    0% {
+      box-shadow:
+        0 0 20px rgba(48, 176, 199, 0.9),
+        0 0 50px rgba(48, 176, 199, 0.5),
+        0 0 100px rgba(48, 176, 199, 0.2);
+      animation-timing-function: ease-in-out;
+    }
+    31% {
+      box-shadow:
+        0 0 2px rgba(48, 176, 199, 0.9),
+        0 0 5px rgba(48, 176, 199, 0.5),
+        0 0 10px rgba(48, 176, 199, 0.2);
+      animation-timing-function: linear;
+    }
+    38% {
+      box-shadow:
+        0 0 2px rgba(48, 176, 199, 0.9),
+        0 0 5px rgba(48, 176, 199, 0.5),
+        0 0 10px rgba(48, 176, 199, 0.2);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      box-shadow:
+        0 0 20px rgba(48, 176, 199, 0.9),
+        0 0 50px rgba(48, 176, 199, 0.5),
+        0 0 100px rgba(48, 176, 199, 0.2);
+    }
+  }
+
+  .tabbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     max-width: 960px;
     margin: 0 auto;
     padding: 16px;
   }
 
+  /* Vorbereitet auf den Wegfall des Beta-Buttons nach der Beta-Phase:
+     Sind nur noch 3 Tabs vorhanden, füllt der erste (Home) bei
+     schmalem Screen allein die erste Zeile, die übrigen zwei teilen
+     sich Zeile zwei. Bei 4 Tabs bleibt die Regel wirkungslos. */
+  .tab:first-child:nth-last-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 640px) {
+    .tabbar {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .tab {
+      flex: 1 1 0;
+    }
+  }
+
   .tab {
-    flex: 1 1 140px;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: clamp(11px, 3.2vw, 14px);
+    padding: 8px 6px;
     border-radius: 8px;
     background: var(--gray5);
     color: var(--label);
     border: 1px solid var(--accent-35);
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    line-height: 1.2;
   }
 
   .tab-active {
@@ -167,6 +232,10 @@
 </head>
 <body>
 
+  <div class="site-logo">
+    <img src="/assets/app-icon.png" alt="Manta Dive Log" width="64" height="64">
+  </div>
+
   <nav class="tabbar" aria-label="Hauptnavigation">
     <a href="/" class="tab tab-active" aria-current="page">Home</a>
     <a href="/beta" class="tab">Beta</a>
@@ -211,7 +280,7 @@
     <div class="screenshot-col">
       <!-- TODO: durch echten HomeView-Screenshot ersetzen -->
       <div class="phone-frame">
-        <img src="/assets/homeview-screenshot.png" alt="Manta Dive Log Homescreen">
+        <div class="phone-placeholder">HomeView-Screenshot folgt</div>
       </div>
     </div>
 

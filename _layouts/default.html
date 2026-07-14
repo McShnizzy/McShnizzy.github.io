@@ -25,11 +25,32 @@
   <header class="site-header">
 
     <div class="lang-switch">
+      <svg class="flag-icon" viewBox="0 0 30 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="30" height="6" y="0" fill="#000000"/>
+        <rect width="30" height="6" y="6" fill="#DD0000"/>
+        <rect width="30" height="6" y="12" fill="#FFCE00"/>
+      </svg>
       {% if page.lang == "en" %}
         <a href="{{ page.alt_url }}">DE</a><span class="sep">·</span><span class="active">EN</span>
       {% else %}
         <span class="active">DE</span><span class="sep">·</span><a href="{{ page.alt_url }}">EN</a>
       {% endif %}
+      <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="60" height="30" fill="#012169"/>
+        <clipPath id="ukflagclip"><rect width="60" height="30"/></clipPath>
+        <g clip-path="url(#ukflagclip)">
+          <polygon points="-177.544,-92.126 240.227,116.759 238.885,119.443 -178.885,-89.443" fill="#FFFFFF"/>
+          <polygon points="-179.780,-87.654 237.991,121.232 237.544,122.126 -180.227,-86.759" fill="#FFFFFF"/>
+          <polygon points="238.885,-89.443 -178.885,119.443 -180.227,116.759 237.544,-92.126" fill="#FFFFFF"/>
+          <polygon points="240.227,-86.759 -177.544,122.126 -177.991,121.232 239.780,-87.654" fill="#FFFFFF"/>
+          <polygon points="-178.885,-89.443 238.885,119.443 237.991,121.232 -179.780,-87.654" fill="#C8102E"/>
+          <polygon points="239.780,-87.654 -177.991,121.232 -178.885,119.443 238.885,-89.443" fill="#C8102E"/>
+          <rect x="25" y="0" width="10" height="30" fill="#FFFFFF"/>
+          <rect x="0" y="10" width="60" height="10" fill="#FFFFFF"/>
+          <rect x="27" y="0" width="6" height="30" fill="#C8102E"/>
+          <rect x="0" y="12" width="60" height="6" fill="#C8102E"/>
+        </g>
+      </svg>
     </div>
 
     <div class="site-logo">

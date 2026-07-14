@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Manta Dive Log</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <div class="site-logo">
+    <span class="wordmark">Manta</span>
+    <img src="/assets/app-icon.png" alt="Manta Dive Log" width="64" height="64">
+    <span class="wordmark">Dive Log</span>
+  </div>
+
+  <nav class="tabbar" aria-label="Hauptnavigation">
+    <a href="/" class="tab{% if page.nav_active == "home" %} tab-active{% endif %}"{% if page.nav_active == "home" %} aria-current="page"{% endif %}>Home</a>
+    <a href="/beta" class="tab{% if page.nav_active == "beta" %} tab-active{% endif %}"{% if page.nav_active == "beta" %} aria-current="page"{% endif %}>Beta</a>
+    <a href="/hilfe" class="tab{% if page.nav_active == "hilfe" %} tab-active{% endif %}"{% if page.nav_active == "hilfe" %} aria-current="page"{% endif %}>App&#8209;Hilfe</a>
+    <a href="/datenschutz" class="tab{% if page.nav_active == "datenschutz" %} tab-active{% endif %}"{% if page.nav_active == "datenschutz" %} aria-current="page"{% endif %}>Datenschutz&nbsp;+&nbsp;Impressum</a>
+  </nav>
+
+  {{ content }}
+
+</body>
+</html>

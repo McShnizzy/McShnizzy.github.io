@@ -36,8 +36,16 @@
 
   .site-logo {
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 14px;
     padding-top: 24px;
+  }
+
+  .site-logo .wordmark {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
   }
 
   .site-logo img {
@@ -233,7 +241,9 @@
 <body>
 
   <div class="site-logo">
+    <span class="wordmark">Manta</span>
     <img src="/assets/app-icon.png" alt="Manta Dive Log" width="64" height="64">
+    <span class="wordmark">Dive Log</span>
   </div>
 
   <nav class="tabbar" aria-label="Hauptnavigation">

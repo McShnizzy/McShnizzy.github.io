@@ -41,6 +41,13 @@ a { color: inherit; }
   color: var(--accent);
 }
 
+.site-tagline {
+  text-align: center;
+  font-size: 14px;
+  color: var(--secondary-label);
+  margin: 6px 16px 0;
+}
+
 .site-logo img {
   width: 64px;
   height: 64px;
@@ -282,6 +289,13 @@ a { color: inherit; }
   font-size: 15px;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.45;
+}
+
+.step-card .note {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--secondary-label);
+  line-height: 1.4;
 }
 
 /* CTA-Button: 1:1 Werte aus MantaActionButtonStyle (Akzent 25% Hintergrund,

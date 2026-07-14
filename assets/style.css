@@ -27,12 +27,42 @@ a { color: inherit; }
 
 /* ── Header: Logo + Wordmark ───────────────────────────────── */
 
+.site-header {
+  position: relative;
+  padding-top: 24px;
+}
+
+.lang-switch {
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--secondary-label);
+}
+
+.lang-switch a:hover {
+  color: var(--accent);
+}
+
+.lang-switch .active {
+  color: var(--accent);
+}
+
+.lang-switch .sep {
+  color: var(--secondary-label);
+  margin: 0 5px;
+}
+
 .site-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
-  padding-top: 24px;
 }
 
 .site-logo .wordmark {

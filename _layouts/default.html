@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="{{ page.lang | default: "de" }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,18 +8,48 @@
 </head>
 <body>
 
-  <div class="site-logo">
-    <span class="wordmark">Manta</span>
-    <img src="/assets/app-icon.png" alt="Manta Dive Log" width="64" height="64">
-    <span class="wordmark">Dive Log</span>
-  </div>
-  <p class="site-tagline">Dein perfektes Logbuch: elegant, geschmeidig, umfangreich. Manta eben.</p>
+{% if page.lang == "en" %}
+  {% assign prefix = "/en" %}
+  {% assign nav_home = "Home" %}
+  {% assign nav_beta = "Beta" %}
+  {% assign nav_hilfe = "App Help" %}
+  {% assign nav_datenschutz = "Privacy Policy &amp; Imprint" %}
+{% else %}
+  {% assign prefix = "" %}
+  {% assign nav_home = "Home" %}
+  {% assign nav_beta = "Beta" %}
+  {% assign nav_hilfe = "App&#8209;Hilfe" %}
+  {% assign nav_datenschutz = "Datenschutz&nbsp;+&nbsp;Impressum" %}
+{% endif %}
+
+  <header class="site-header">
+
+    <div class="lang-switch">
+      {% if page.lang == "en" %}
+        <a href="{{ page.alt_url }}">DE</a><span class="sep">·</span><span class="active">EN</span>
+      {% else %}
+        <span class="active">DE</span><span class="sep">·</span><a href="{{ page.alt_url }}">EN</a>
+      {% endif %}
+    </div>
+
+    <div class="site-logo">
+      <span class="wordmark">Manta</span>
+      <img src="/assets/app-icon.png" alt="Manta Dive Log" width="64" height="64">
+      <span class="wordmark">Dive Log</span>
+    </div>
+    {% if page.lang == "en" %}
+      <p class="site-tagline">Your perfect logbook: elegant, smooth, comprehensive. Simply Manta.</p>
+    {% else %}
+      <p class="site-tagline">Dein perfektes Logbuch: elegant, geschmeidig, umfangreich. Manta eben.</p>
+    {% endif %}
+
+  </header>
 
   <nav class="tabbar" aria-label="Hauptnavigation">
-    <a href="/" class="tab{% if page.nav_active == "home" %} tab-active{% endif %}"{% if page.nav_active == "home" %} aria-current="page"{% endif %}>Home</a>
-    <a href="/beta" class="tab{% if page.nav_active == "beta" %} tab-active{% endif %}"{% if page.nav_active == "beta" %} aria-current="page"{% endif %}>Beta</a>
-    <a href="/hilfe" class="tab{% if page.nav_active == "hilfe" %} tab-active{% endif %}"{% if page.nav_active == "hilfe" %} aria-current="page"{% endif %}>App&#8209;Hilfe</a>
-    <a href="/datenschutz" class="tab{% if page.nav_active == "datenschutz" %} tab-active{% endif %}"{% if page.nav_active == "datenschutz" %} aria-current="page"{% endif %}>Datenschutz&nbsp;+&nbsp;Impressum</a>
+    <a href="{{ prefix }}/" class="tab{% if page.nav_active == "home" %} tab-active{% endif %}"{% if page.nav_active == "home" %} aria-current="page"{% endif %}>{{ nav_home }}</a>
+    <a href="{{ prefix }}/beta" class="tab{% if page.nav_active == "beta" %} tab-active{% endif %}"{% if page.nav_active == "beta" %} aria-current="page"{% endif %}>{{ nav_beta }}</a>
+    <a href="{{ prefix }}/hilfe" class="tab{% if page.nav_active == "hilfe" %} tab-active{% endif %}"{% if page.nav_active == "hilfe" %} aria-current="page"{% endif %}>{{ nav_hilfe }}</a>
+    <a href="{{ prefix }}/datenschutz" class="tab{% if page.nav_active == "datenschutz" %} tab-active{% endif %}"{% if page.nav_active == "datenschutz" %} aria-current="page"{% endif %}>{{ nav_datenschutz }}</a>
   </nav>
 
   {{ content }}

@@ -40,7 +40,13 @@ a { color: inherit; }
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+}
+
+.lang-switch .lang-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .lang-switch .flag-icon {
@@ -50,12 +56,12 @@ a { color: inherit; }
   display: block;
 }
 
-.lang-switch a {
+.lang-switch a.lang-option {
   text-decoration: none;
   color: var(--secondary-label);
 }
 
-.lang-switch a:hover {
+.lang-switch a.lang-option:hover {
   color: var(--accent);
 }
 
@@ -84,7 +90,7 @@ a { color: inherit; }
 .site-tagline {
   text-align: center;
   font-size: 14px;
-  color: var(--secondary-label);
+  color: var(--accent);
   margin: 6px 16px 0;
 }
 

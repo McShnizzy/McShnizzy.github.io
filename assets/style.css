@@ -90,6 +90,7 @@ a { color: inherit; }
 .site-tagline {
   text-align: center;
   font-size: 14px;
+  font-weight: 700;
   color: var(--accent);
   margin: 6px 16px 0;
 }

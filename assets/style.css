@@ -387,6 +387,28 @@ a { color: inherit; }
   line-height: 1.45;
 }
 
+/* ── Rechtstext-Seiten (z.B. EULA) ─────────────────────────── */
+
+.legal-content h2 {
+  font-size: 17px;
+  margin: 32px 0 8px;
+}
+
+.legal-content h2:first-of-type {
+  margin-top: 24px;
+}
+
+.legal-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 0 12px;
+}
+
+.legal-content .intro p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }

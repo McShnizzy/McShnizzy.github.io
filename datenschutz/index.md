@@ -1,20 +1,24 @@
 ---
 layout: default
-title: Datenschutzerklärung & Impressum
-lang: de
-alt_url: /en/datenschutz
+title: Privacy Policy & Imprint
+lang: en
+alt_url: /datenschutz
 nav_active: datenschutz
 ---
 
-{% include datenschutz-de.md %}
+<main class="page-content legal-content" markdown="1">
 
-<h2>Impressum</h2>
-<p>Angaben gemäß § 5 DDG:</p>
+{% include datenschutz-en.md %}
+
+<h2>Imprint</h2>
+<p>Information according to § 5 DDG (German Digital Services Act):</p>
 <p>
 Johannes Disselhoff<br>
 Hewaldstr. 5<br>
 10825 Berlin<br>
-Deutschland
+Germany
 </p>
-<p>Kontakt:<br>
-E-Mail: <a href="mailto:mantadivelog@gmail.com">mantadivelog@gmail.com</a></p>
+<p>Contact:<br>
+Email: <a href="mailto:mantadivelog@gmail.com">mantadivelog@gmail.com</a></p>
+
+</main>

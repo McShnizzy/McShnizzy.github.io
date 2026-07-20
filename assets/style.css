@@ -67,6 +67,8 @@ a { color: inherit; }
 
 .lang-switch .active {
   color: var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 3px;
 }
 
 .lang-switch .sep {

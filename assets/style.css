@@ -405,6 +405,19 @@ a { color: inherit; }
   margin: 0 0 12px;
 }
 
+.legal-content ul,
+.legal-content ol {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+
+.legal-content li {
+  margin-bottom: 4px;
+}
+
 .legal-content .intro p {
   color: rgba(0, 0, 0, 0.7);
 }

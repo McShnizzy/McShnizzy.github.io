@@ -101,12 +101,11 @@
 
   <nav class="tabbar" aria-label="Hauptnavigation">
     <a href="{{ prefix }}/" class="tab{% if page.nav_active == "home" %} tab-active{% endif %}"{% if page.nav_active == "home" %} aria-current="page"{% endif %}>{{ nav_home }}</a>
-    <a href="{{ prefix }}/beta" class="tab{% if page.nav_active == "beta" %} tab-active{% endif %}"{% if page.nav_active == "beta" %} aria-current="page"{% endif %}>{{ nav_beta }}</a>
+
     <!-- Vorübergehend deaktiviert, bis Inhalt/Konzept der Hilfe-Seite feststeht.
          Einfach diese Kommentarzeilen entfernen, um den Button wiederherzustellen:
     <a href="{{ prefix }}/hilfe" class="tab{% if page.nav_active == "hilfe" %} tab-active{% endif %}"{% if page.nav_active == "hilfe" %} aria-current="page"{% endif %}>{{ nav_hilfe }}</a>
     -->
-    <a href="{{ prefix }}/datenschutz" class="tab{% if page.nav_active == "datenschutz" %} tab-active{% endif %}"{% if page.nav_active == "datenschutz" %} aria-current="page"{% endif %}>{{ nav_datenschutz }}</a>
   </nav>
 
   {{ content }}

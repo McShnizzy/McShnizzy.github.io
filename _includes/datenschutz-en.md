@@ -6,7 +6,7 @@ With the following privacy policy we would like to inform you which types of you
 
 The terms used are not gender-specific.
 
-Last Update: 19. July 2026
+Last Update: 22. November 2026
 
 ## Table of contents
 
@@ -20,6 +20,7 @@ Last Update: 19. July 2026
 *   [Rights of Data Subjects](#m10)
 *   [Local Data Storage and iCloud Sync](#m828)
 *   [Bluetooth Import from Dive Computers](#m2260)
+*   [Manta Pro: Purchases, subscriptions and trial period](#manta-pro)
 *   [Business services](#m317)
 *   [Business processes and operations](#m13)
 *   [Use of online platforms for listing and sales purposes](#m605)
@@ -146,17 +147,25 @@ Rights of the Data Subjects under the GDPR: As data subject, you are entitled to
 *   **Right to data portability:** You have the right to receive data concerning you which you have provided to us in a structured, common and machine-readable format in accordance with the legal requirements, or to request its transmission to another controller.
 *   **Complaint to the supervisory authority:** In accordance with the law and without prejudice to any other administrative or judicial remedy, you also have the right to lodge a complaint with a data protection supervisory authority, in particular a supervisory authority in the Member State where you habitually reside, the supervisory authority of your place of work or the place of the alleged infringement, if you consider that the processing of personal data concerning you infringes the GDPR.
 
-## Local Data Storage and iCloud Sync
+## Local Data Storage and iCloud Sync {#m828}
 
-"Dive and personal data (entries, notes, photos, documents, etc.) is stored exclusively locally on your device. Synchronization with servers only occurs if you enable the optional iCloud sync (Pro feature)."
+"Dive log and personal data (entries, notes, photos, documents, etc.) are by default stored exclusively on your device. If you enable the optional iCloud sync (Pro feature), this data, including photos and documents, is synchronised with your other devices via Apple iCloud (CloudKit and iCloud Drive). It is stored in your own iCloud account; we have no access to it. For timely synchronisation, the app uses silent background notifications via the Apple Push Notification Service; no content of your logbook is transmitted to us. The start date of the trial period is an exception (see "Manta Pro")."
 
-## Bluetooth Import from Dive Computers
+## Bluetooth Import from Dive Computers {#m2260}
 
 "When importing dive data via Bluetooth from a dive computer, an identifier — including the device's serial number — is permanently stored on your device to detect duplicates."
 
 **Further information on processing methods, procedures and services used:**
 
-*   **I'm-Diving-Mode (Lock Screen Display):** "The optional 'I'm-Diving-Mode' lets you display selected information (first and last name, date of birth, nationality, blood type, emergency contact) on your iPhone's lock screen. You decide yourself which details are shown. the feature is disabled by default. Display happens entirely locally on your device – no data is transmitted to any server or push service. Please note: while active, the selected information is visible to anyone who picks up the locked device, even without unlocking it.".
+*   **I'm-Diving-Mode (Lock Screen Display):** "The optional 'I'm-Diving-Mode' lets you display selected information (first and last name, date of birth, nationality, blood type, emergency contact) on your iPhone's lock screen. You decide yourself which details are shown. The feature is disabled by default. Display happens entirely locally on your device – no data is transmitted to any server or push service. The profile details stored for this purpose (e.g. name, date of birth, blood type, emergency contact) are part of your profile and, regardless of whether the display is enabled, are stored in your iCloud account and synchronised with your devices if iCloud sync (Pro) is enabled; we have no access to them. Please note: while active, the selected information is visible to anyone who picks up the locked device, even without unlocking it.".
+
+*   **Import from Apple Health (HealthKit):** On request, Manta can import dives from the Health app. For this, the app asks for your permission and reads, read-only, workouts (dives), underwater depth, the temperature value stored in Health as "body temperature" (adopted by Manta as water temperature), and the start point of the recorded route (GPS) as start coordinate. The imported values are saved as dives in your logbook, i.e. locally and, if iCloud sync is enabled, in your iCloud account. No data is passed on to us or third parties, and it is not used for advertising or analytics. You can revoke the permission at any time in iOS Settings. This is health data; processing is based on your explicit consent (Art. 9(2)(a) GDPR) given in the permission dialog.
+
+## Manta Pro: Purchases, subscriptions and trial period {#manta-pro}
+
+*   **Purchases and subscriptions:** Manta Pro can be purchased as a one-time purchase or subscription via the Apple App Store. Payment, billing and subscription management are handled exclusively by Apple. We do not receive payment data such as card numbers or bank details. The app checks on your device, via Apple's StoreKit interface, whether an entitlement exists. Legal basis: performance of a contract (Art. 6(1)(b) GDPR).
+
+*   **Trial period:** Manta Pro can be tried once for 30 days. To prevent repeated use, the start date (and only this) is stored in your device's Keychain and in the iCloud key-value store of your Apple account when the trial starts. This happens independently of the logbook's iCloud sync. The Keychain entry may survive an uninstallation of the app. We have no access to this data. Legal basis: legitimate interest in preventing abuse through repeated use (Art. 6(1)(f) GDPR).
 
 ## Business services {#m317}
 
@@ -270,11 +279,11 @@ We process the data of the users of our application to the extent necessary to p
 
 Information on the functions of the application:
 
-Camera function: Direct photo capture for documenting dives and trips and adding profile photos or supporting documents (e.g. certifications, certificates, insurance records). Captured images are stored exclusively locally on the user's device.
+Camera function: Direct photo capture for documenting dives and trips and adding profile photos or supporting documents (e.g. certifications, certificates, insurance records). The captured images are stored on the user's device; if iCloud sync (Pro) is enabled, additionally in the user's iCloud account.
 
 Location data: To record the dive site for each dive, the position can either be entered manually or retrieved once via the device's GPS sensor. No continuous location tracking takes place.
 
-*   **Processed data types:** Inventory data (For example, the full name, residential address, contact information, customer number, etc.); Usage data (e.g. page views and duration of visit, click paths, intensity and frequency of use, types of devices and operating systems used, interactions with content and features); Meta, communication and process data (e.g. IP addresses, timestamps, identification numbers, involved parties); Payment Data (e.g. bank details, invoices, payment history); Contract data (e.g. contract object, duration, customer category); Images and/ or video recordings (e.g. photographs or video recordings of a person). Location data (Information on the geographical position of a device or person).
+*   **Processed data types:** Master data (profile details such as name, date of birth, nationality, on your device); content data (dive entries, notes, documents); image and/or video recordings; location data (one-time query, manual entry or start point of imported Health routes); health data (import from Apple Health, blood type in I'm-Diving-Mode); contract data (status of purchase, subscription and trial period).
 *   **Data subjects:** Users (e.g. website visitors, users of online services).
 *   **Purposes of processing and legitimate interests:** Provision of contractual services and fulfillment of contractual obligations; Security measures. Provision of our online services and usability.
 *   **Retention and deletion:** Deletion in accordance with the information provided in the section "General Information on Data Retention and Deletion".
@@ -288,6 +297,9 @@ Location data: To record the dive site for each dive, the position can either be
 *   **Processing of location data:** Within the course of using our application, the location data collected by the device used or otherwise entered by the user are processed. The use of the location data requires an authorization of the users, which can be revoked at any time. The use of the location data serves only to provide the respective functionality of our application, according to its description to the users or its typical and expectable functionality.
 *   **Location history and movement profiles:** The location data is only used selectively and is not processed to create a location history or a movement profile of the devices used or of their users.
 *   **Processing of Health Data (I'm-Diving-Mode):** "If you select your blood type for display on the lock screen as part of 'I'm-Diving-Mode,' we process a special category of data within the meaning of Art. 9(1) GDPR. This processing takes place exclusively on the basis of your explicit consent (Art. 9(2)(a) GDPR), which you provide separately before activating this display option. The purpose is to make safety-relevant information quickly available to first responders in an emergency. You may withdraw your consent at any time with effect for the future by disabling the blood type display in the app settings.".
+
+**Maps:**
+*   **Map display (Apple Maps):** To display dive sites, the app uses Apple Maps (MapKit). Your device loads map data from Apple; Apple processes technically necessary data (e.g. IP address, requested map section) according to Apple's privacy policy. We do not receive this data. Service provider: Apple Inc., Infinite Loop, Cupertino, CA 95014, USA; Privacy policy: https://www.apple.com/legal/privacy/; Legal basis: performance of a contract (Art. 6(1)(b) GDPR).
 
 ## Purchase of applications via Appstores {#m1466}
 

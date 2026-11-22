@@ -6,7 +6,7 @@ Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, we
 
 Die verwendeten Begriffe sind nicht geschlechtsspezifisch.
 
-Stand: 19. Juli 2026
+Stand: 22. November 2026
 
 ## Inhaltsübersicht
 
@@ -20,6 +20,7 @@ Stand: 19. Juli 2026
 *   [Rechte der betroffenen Personen](#m10)
 *   [Lokale Datenspeicherung und iCloud-Sync](#m828)
 *   [Bluetooth-Import vom Tauchcomputer](#m2260)
+*   [Manta Pro: Käufe, Abonnements und Probezeitraum](#manta-pro)
 *   [Geschäftliche Leistungen](#m317)
 *   [Geschäftsprozesse und -verfahren](#m13)
 *   [Einsatz von Online-Plattformen zu Angebots- und Vertriebszwecken](#m605)
@@ -142,17 +143,25 @@ Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als Betroffene nach 
 *   **Recht auf Datenübertragbarkeit:** Sie haben das Recht, Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe der gesetzlichen Vorgaben in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen anderen Verantwortlichen zu fordern.
 *   **Beschwerde bei Aufsichtsbehörde:** Entsprechend den gesetzlichen Vorgaben und unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs, haben Sie ferner das Recht, bei einer Datenschutzaufsichtsbehörde, insbesondere einer Aufsichtsbehörde im Mitgliedstaat, in dem Sie sich gewöhnlich aufhalten, der Aufsichtsbehörde Ihres Arbeitsplatzes oder des Ortes des mutmaßlichen Verstoßes, eine Beschwerde einzulegen, wenn Sie der Ansicht sei sollten, dass die Verarbeitung der Ihre Person betreffenden personenbezogenen Daten gegen die DSGVO verstößt.
 
-## Lokale Datenspeicherung und iCloud-Sync
+## Lokale Datenspeicherung und iCloud-Sync {#m828}
 
-„Tauchgangs- und persönliche Daten (Einträge, Notizen, Fotos, Dokumente, etc.) werden ausschließlich lokal auf Ihrem Gerät gespeichert. Ein Abgleich mit Servern findet nur statt, wenn Sie die optionale iCloud-Synchronisierung (Pro-Funktion) aktivieren."
+Tauchgangs- und persönliche Daten (Einträge, Notizen, Fotos, Dokumente, usw.) werden standardmäßig ausschließlich lokal auf Ihrem Gerät gespeichert. Aktivieren Sie die optionale iCloud-Synchronisierung (Pro-Funktion), werden diese Daten einschließlich Fotos und Dokumenten über Apple iCloud (CloudKit und iCloud Drive) mit Ihren übrigen Geräten abgeglichen. Sie liegen dabei in Ihrem eigenen iCloud-Konto; wir haben darauf keinen Zugriff. Für die zeitnahe Synchronisierung nutzt die App stille Hintergrund-Benachrichtigungen über den Apple Push Notification Service; Inhalte Ihres Logbuchs werden dabei nicht an uns übertragen. Eine Ausnahme bildet das Startdatum des Probezeitraums (siehe „Manta Pro“).
 
-## Bluetooth-Import vom Tauchcomputer
+## Bluetooth-Import vom Tauchcomputer {#m2260}
 
-„Beim Import von Tauchgangsdaten über Bluetooth von einem Tauchcomputer wird zur Duplikat-Erkennung ein Kennwert einschließlich der Geräte-Seriennummer dauerhaft auf Ihrem Gerät gespeichert."
+Beim Import von Tauchgangsdaten über Bluetooth von einem Tauchcomputer wird zur Duplikat-Erkennung ein Kennwert einschließlich der Geräte-Seriennummer dauerhaft auf Ihrem Gerät gespeichert.
 
 **Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:**
 
-*   **Bin-Tauchen-Modus (Sperrbildschirm-Anzeige):** „Über den optionalen 'Bin-Tauchen-Modus' können Sie ausgewählte Informationen (Vor- und Nachname, Geburtsdatum, Nationalität, Blutgruppe, Notfallkontakt) auf dem Sperrbildschirm Ihres iPhones anzeigen lassen. Welche Angaben angezeigt werden, legen Sie selbst fest. die Funktion ist standardmäßig deaktiviert. Die Anzeige erfolgt vollständig lokal auf Ihrem Gerät – es findet keine Datenübertragung an Server oder Push-Dienste statt. Bitte beachten Sie: Bei aktivierter Anzeige sind die ausgewählten Informationen für jede Person sichtbar, die das gesperrte Gerät in die Hand nimmt, auch ohne Entsperrung.".
+*   **Bin-Tauchen-Modus (Sperrbildschirm-Anzeige):** Über den optionalen 'Bin-Tauchen-Modus' können Sie ausgewählte Informationen (Vor- und Nachname, Geburtsdatum, Nationalität, Blutgruppe, Notfallkontakt) auf dem Sperrbildschirm Ihres iPhones anzeigen lassen. Welche Angaben angezeigt werden, legen Sie selbst fest. Die Funktion ist standardmäßig deaktiviert. Die Anzeige erfolgt vollständig lokal auf Ihrem Gerät – es findet keine Datenübertragung an Server oder Push-Dienste statt. Die dafür hinterlegten Profilangaben (z. B. Name, Geburtsdatum, Blutgruppe, Notfallkontakt) sind Teil Ihres Profils und werden, unabhängig davon, ob die Anzeige aktiviert ist, bei aktivierter iCloud-Synchronisierung (Pro) in Ihrem iCloud-Konto gespeichert und mit Ihren Geräten abgeglichen; wir haben darauf keinen Zugriff. Bitte beachten Sie: Bei aktivierter Anzeige sind die ausgewählten Informationen für jede Person sichtbar, die das gesperrte Gerät in die Hand nimmt, auch ohne Entsperrung.
+
+*   **Import aus Apple Health (HealthKit):** Auf Wunsch kann Manta Tauchgänge aus der Health-App importieren. Dafür fragt die App Ihre Berechtigung ab und liest ausschließlich lesend Workouts (Tauchgänge), Tauchtiefe, den in Health als „Körpertemperatur“ geführten Temperaturwert (von Manta als Wassertemperatur übernommen) sowie den Startpunkt der aufgezeichneten Route (GPS) als Startkoordinate. Die importierten Werte werden als Tauchgänge in Ihrem Logbuch gespeichert, also lokal und bei aktivierter iCloud-Synchronisierung in Ihrem iCloud-Konto. Eine Weitergabe an uns oder Dritte, Werbung oder Analyse findet nicht statt. Die Berechtigung können Sie jederzeit in den iOS-Einstellungen widerrufen. Es handelt sich um Gesundheitsdaten; die Verarbeitung beruht auf Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO) im Berechtigungsdialog.
+
+## Manta Pro: Käufe, Abonnements und Probezeitraum {#manta-pro}
+
+*   **Käufe und Abonnements:** Manta Pro kann als Einmalkauf oder Abonnement über den Apple App Store erworben werden. Zahlung, Abrechnung und die Verwaltung von Abonnements erfolgen ausschließlich durch Apple. Wir erhalten dabei keine Zahlungsdaten wie Kartennummern oder Bankverbindungen. Die App prüft auf Ihrem Gerät über Apples StoreKit-Schnittstelle, ob eine Berechtigung besteht. Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b DSGVO).
+
+*   **Probezeitraum:** Manta Pro kann einmalig 30 Tage lang getestet werden. Um eine mehrfache Nutzung zu verhindern, wird beim Start des Probezeitraums das Startdatum (und nur dieses) in der Keychain Ihres Geräts und im iCloud-Schlüssel-Wert-Speicher Ihres Apple-Kontos gespeichert. Das geschieht unabhängig von der iCloud-Synchronisierung des Logbuchs. Der Keychain-Eintrag kann eine Deinstallation der App überdauern. Wir haben keinen Zugriff auf diese Daten. Rechtsgrundlage: berechtigtes Interesse am Schutz vor missbräuchlicher Mehrfachnutzung (Art. 6 Abs. 1 S. 1 lit. f DSGVO).
 
 ## Geschäftliche Leistungen {#m317}
 
@@ -268,11 +277,11 @@ Wir verarbeiten die Daten der Nutzer unserer Applikation, soweit diese erforderl
 
 Hinweise zu Funktionen der Applikation:
 
-Kamerafunktion: Direkte Aufnahme von Fotos zur Dokumentation von Tauchgängen oder Reisen sowie zum Hinzufügen von Profilfotos oder Dokumenten (z. B. Brevets, Zertifikate, Versicherungsnachweise). Die Aufnahmen werden ausschließlich lokal auf dem Gerät des Nutzers gespeichert.
+Kamerafunktion: Direkte Aufnahme von Fotos zur Dokumentation von Tauchgängen oder Reisen sowie zum Hinzufügen von Profilfotos oder Dokumenten (z. B. Brevets, Zertifikate, Versicherungsnachweise). Die Aufnahmen werden auf dem Gerät des Nutzers gespeichert; bei aktivierter iCloud-Synchronisierung (Pro) zusätzlich in dessen iCloud-Konto.
 
 Standortdaten: Zur Angabe des Tauchspots pro Tauchgang kann die Position entweder manuell eingegeben oder einmalig über den GPS-Sensor des Geräts abgefragt werden. Es findet keine fortlaufende Standortverfolgung statt.
 
-*   **Verarbeitete Datenarten:** Bestandsdaten (z. B. der vollständige Name, Wohnadresse, Kontaktinformationen, Kundennummer, etc.); Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen); Zahlungsdaten (z. B. Bankverbindungen, Rechnungen, Zahlungshistorie); Vertragsdaten (z. B. Vertragsgegenstand, Laufzeit, Kundenkategorie); Bild- und/ oder Videoaufnahmen (z. B. Fotografien oder Videoaufnahmen einer Person). Standortdaten (Angaben zur geografischen Position eines Gerätes oder einer Person).
+*   **Verarbeitete Datenarten:** Bestandsdaten (Profilangaben wie Name, Geburtsdatum, Nationalität, auf Ihrem Gerät); Inhaltsdaten (Tauchgangseinträge, Notizen, Dokumente); Bild- und/oder Videoaufnahmen; Standortdaten (einmalige Abfrage, manuelle Eingabe oder Startpunkt importierter Health-Routen); Gesundheitsdaten (Import aus Apple Health, Blutgruppe im Bin-Tauchen-Modus); Vertragsdaten (Status von Kauf, Abonnement und Probezeitraum).
 *   **Betroffene Personen:** Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten).
 *   **Zwecke der Verarbeitung und berechtigte Interessen:** Erbringung vertraglicher Leistungen und Erfüllung vertraglicher Pflichten; Sicherheitsmaßnahmen. Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
 *   **Aufbewahrung und Löschung:** Löschung entsprechend Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung und Löschung".
@@ -286,6 +295,9 @@ Standortdaten: Zur Angabe des Tauchspots pro Tauchgang kann die Position entwede
 *   **Verarbeitung von Standortdaten:** Im Rahmen der Nutzung unserer Applikation werden die von dem verwendeten Gerät erhobenen oder sonst durch die Nutzer eingegebenen Standortdaten verarbeitet. Die Nutzung der Standortdaten setzt eine Berechtigung der Nutzer, die jederzeit widerrufen werden kann, voraus. Die Nutzung der Standortdaten dient jeweils nur der Bereitstellung der jeweiligen Funktionalität unserer Applikation, entsprechend ihrer Beschreibung gegenüber den Nutzern, bzw. ihrer typischen und erwartbaren Funktionsweise.
 *   **Kein Standortverlauf und keine Bewegungsprofile:** Die Standortdaten werden lediglich punktuell eingesetzt und nicht zur Bildung eines Standortverlaufs oder eines Bewegungsprofils der verwendeten Geräte, bzw. ihrer Nutzer verarbeitet.
 *   **Verarbeitung von Gesundheitsdaten (Bin-Tauchen-Modus):** „Wenn Sie im Rahmen des 'Bin-Tauchen-Modus' Ihre Blutgruppe zur Anzeige auf dem Sperrbildschirm auswählen, verarbeiten wir damit ein Gesundheitsdatum im Sinne von Art. 9 Abs. 1 DSGVO. Diese Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO), die Sie vor Aktivierung dieser Anzeigeoption gesondert erteilen. Zweck ist die schnelle Verfügbarkeit sicherheitsrelevanter Informationen für Ersthelfer im Notfall. Die Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie die Anzeige der Blutgruppe in den App-Einstellungen deaktivieren.".
+
+**Karten:**
+*   **Kartenanzeige (Apple Karten):** Zur Darstellung von Tauchplätzen nutzt die App Apple Karten (MapKit). Dabei lädt Ihr Gerät Kartendaten von Apple; Apple verarbeitet dabei technisch notwendige Daten (z. B. IP-Adresse, angefragter Kartenausschnitt) nach der Apple-Datenschutzerklärung. Wir erhalten diese Daten nicht. Dienstanbieter: Apple Inc., Infinite Loop, Cupertino, CA 95014, USA; Datenschutzerklärung: https://www.apple.com/legal/privacy/de-ww/; Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 S. 1 lit. b DSGVO).
 
 ## Bezug von Applikationen über Appstores {#m1466}
 
